@@ -21,6 +21,7 @@ multi_line_output=2
 - E1101
 - C0103
 - C0111
+- R0903
 - W0613
 
 Don't forget to set max line length as 119. Example usage:
