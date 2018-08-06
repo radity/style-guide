@@ -1,8 +1,12 @@
-* We usually follow [PEP 8](https://www.python.org/dev/peps/pep-0008/).
-* Additionally we follow [Django Coding Style](https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/coding-style/) in our Django projects.
+- We usually follow [PEP 8](https://www.python.org/dev/peps/pep-0008/).
+- Additionally we follow [Django Coding Style](https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/coding-style/) in our Django projects.
 
 ## But..
-* We allow up to 119 characters in a line, even if we don't use Django in the project.
+- We allow up to 119 characters in a line, even if we don't use Django in the project.
+- Use kebab-style in urls.
+- Use kebab-style in asset file names.
+- Use double slash " only for translatable strings.
+- Use single slash ' as default.
 
 ## Python module sorter: isort
 In PyCharm you can sort imports alphabetically and separate them into sections (CTRL + SHIFT + O in Windows, with a default keymap). If your editor doesn't have the same feature, you can use [isort](https://pypi.org/project/isort/). It's a command line utility, you can install it with **pip**. Please use our isort configuration:
