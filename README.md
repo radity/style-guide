@@ -1,7 +1,7 @@
 ![Style guide](https://gokmengorgen.net/img/style-guide/code-part-pixelised.png "Style guide")
 
 ## EditorConfig
-Please use [EditorConfig](https://editorconfig.org/) extension in your preferred IDE or editor. And copy the following config to your project.
+Please use [EditorConfig](https://editorconfig.org/) extension in your preferred IDE or editor. And copy the following config into **your project folder**:
 
 ```ini
 # .editorconfig
@@ -10,7 +10,7 @@ root = true
 [*]
 charset = utf-8
 end_of_line = lf
-indent_size = 4
+indent_size = 2
 indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
@@ -20,6 +20,9 @@ indent_style = tab
 
 [*.go]
 indent_style = tab
+
+[*.py]
+indent_size = 4
 ```
 
 ## Git config
