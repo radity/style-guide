@@ -1,10 +1,3 @@
----
-title: "Python"
-slug: "python"
-description: "Read my style guide notes before working with me. I didn't determine the rules by myself, we did it together, I am just a lead one of my team."
-meta_img: "img/style-guide/code-part-pixelised.png"
----
-
 * We usually follow [PEP 8](https://www.python.org/dev/peps/pep-0008/).
 * Additionally we follow [Django Coding Style](https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/coding-style/) in our Django projects.
 

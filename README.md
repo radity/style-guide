@@ -1,11 +1,4 @@
----
-title: "Style guide"
-slug: "style-guide"
-description: "Read my style guide notes before working with me. I didn't determine the rules by myself, we did it together, I am just a lead one of my team."
-meta_img: "img/style-guide/code-part-pixelised.png"
----
-
-![Style guide](/img/style-guide/code-part-pixelised.png "Style guide")
+![Style guide](https://gokmengorgen.net/img/style-guide/code-part-pixelised.png "Style guide")
 
 ## EditorConfig
 Please use [EditorConfig](https://editorconfig.org/) extension in your preferred IDE or editor. And copy the following config to your project.
