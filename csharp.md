@@ -1,15 +1,6 @@
-We can follow [this document](https://www.dofactory.com/reference/csharp-coding-standards) for CSharp coding standards.
-
-Additionally our default editorconfig file must be update with below settings.
-
-```ini
-[*.cs]
-indent_size = 4
-end_of_line = crlf
-```
-
-* Further more [this article](https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference) might be useful for EditorConfig file
-* Another well explained [article](https://kent-boogaart.com/blog/editorconfig-reference-for-c-developers) that you can add more config
+- We can follow [this document](https://www.dofactory.com/reference/csharp-coding-standards) for CSharp coding standards.
+- Further more [this article](https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference) might be useful for EditorConfig file
+- Another well explained [article](https://kent-boogaart.com/blog/editorconfig-reference-for-c-developers) that you can add more config
 
 ## VS 2017
 `.editorconfig` file is supported since Visual Studio 2017. You can follow [this instruction](https://almvm.azurewebsites.net/labs/tfs/editorconfig/) for how to make style guide configuration.
