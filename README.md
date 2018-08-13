@@ -59,6 +59,11 @@ We want to see your fullname and email correctly. Also it would be nice if you u
     editor = nano
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
     excludesfile = ~/.gitignore_global
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
 ```
 
 Please ignore IDE, editor, and OS specific files in **gitignore_global**:
