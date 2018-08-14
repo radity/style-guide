@@ -23,8 +23,12 @@ indent_size = 4
 
 [*.go]
 indent_style = tab
+indent_size = 8
 
 [*.py]
+indent_size = 4
+
+[*.sh]
 indent_size = 4
 ```
 
