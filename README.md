@@ -30,6 +30,9 @@ indent_size = 4
 
 [*.sh]
 indent_size = 4
+
+[*.conf]
+indent_size = 4
 ```
 
 ## Git config
