@@ -17,17 +17,10 @@ First we install **ESlint** + **Prettier**.
 npm install -D eslint prettier
 ```
 
-Then we install **Airbnb config**. Airbnb config has own dependencies like:
+Airbnb package has many unwanted dependencies, you can install `eslint-config-airbnb-base` instead:
 
 ```bash
-eslint-config-airbnb eslint eslint-plugin-jsx-a11y
-eslint-plugin-import eslint-plugin-react
-```
-
-instead of installing all these manually. We use:
-
-```bash
-npx install-peerdeps --dev eslint-config-airbnb
+npx install-peerdeps --dev eslint-config-airbnb-base
 ```
 
 (For using **npx** you need to use **npm 5+** )
@@ -41,36 +34,60 @@ npm install -D eslint-config-prettier eslint-plugin-prettier
 
 ## Configuration
 
-Our default **.eslintrc** file:
+Our default **.eslintrc.js** file:
 
-```json
-{
-  "extends": ["airbnb", "prettier"],
-  "plugins": ["prettier"],
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
+```js
+module.exports = {
+  root: true,
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
   },
-  "env": {
-    "browser": true,
-    "es6": true,
-    "node": true
+  extends: ['airbnb-base', 'prettier', 'prettier/vue', 'plugin:vue/strongly-recommended'],
+  parserOptions: {
+    parser: 'babel-eslint',
   },
-  "rules": {
-    "prettier/prettier": "error"
-  }
-}
+  plugins: ['vue', 'prettier'],
+  rules: {
+    'arrow-parens': 0,
+    'comma-dangle': 0,
+    'function-paren-newline': 0,
+    'generator-star-spacing': 0,
+    'linebreak-style': 0,
+    'import/extensions': 0,
+    'import/no-unresolved': 0,
+    'import/prefer-default-export': 0,
+    'max-len': 0,
+    'prefer-template': 0,
+    semi: ['error', 'always'],
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'vue/attributes-order': 0,
+    'vue/max-attributes-per-line': 0,
+  },
+  settings: {
+    'import/resolver': {
+      webpack: {
+        config: 'build/webpack.base.conf.js',
+      },
+    },
+  },
+};
 ```
 
 Our default .prettierrc file:
 
 ```json
 {
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "ignore",
   "printWidth": 100,
+  "semi": true,
   "singleQuote": true,
-  "trailingComma": "all"
+  "trailingComma": "all",
+  "useTabs": false
 }
 ```
 
@@ -80,7 +97,9 @@ In package.json file:
 {
   ...
   "scripts": {
-      "lint": "eslint ."
+      ...
+      "lint": "eslint --ext .js,.vue src",
+      ...
   },
   ...
 }
