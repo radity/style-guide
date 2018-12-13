@@ -4,7 +4,7 @@
 ## But..
 - We allow up to 119 characters in a line, even if we don't use Django in the project.
 - Use kebab-style in urls.
-- Use kebab-style in asset file names.
+- Use kebab-style in asset file names. (for html, css, javascript and image files.)
 - Use double slash " only for translatable strings.
 - Use single slash ' as default.
 
