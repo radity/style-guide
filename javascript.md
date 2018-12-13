@@ -29,7 +29,7 @@ Note: Airbnb package has many unwanted dependencies, you can also install `eslin
 npx install-peerdeps --dev eslint-config-airbnb-base
 ```
 
-Note: To use **npx** you need to run **npm 5+** )
+Note: To use **npx** you need to run **npm 5+** 
 
 Step 3: Install: **eslint-config-prettier** to disable formatting for ESLint and **eslint-plugin-prettier** to allow ESLint to show formatting errors.
 
