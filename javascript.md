@@ -17,19 +17,13 @@ Step 1: Install **ESlint** + **Prettier**.
 npm install -D eslint prettier
 ```
 
-Step 2: Install **eslint-config-airbnb**
-
-```bash
-npx install-peerdeps --dev eslint-config-airbnb
-```
-
-Note: Airbnb package has many unwanted dependencies, you can also install `eslint-config-airbnb-base` instead:
+Step 2: `eslint-config-airbnb` package has many unwanted dependencies for **Vue**, you can also install `eslint-config-airbnb-base` instead:
 
 ```bash
 npx install-peerdeps --dev eslint-config-airbnb-base
 ```
 
-Note: To use **npx** you need to run **npm 5+** )
+Note: To use **npx** you need to run **npm 5+**
 
 Step 3: Install: **eslint-config-prettier** to disable formatting for ESLint and **eslint-plugin-prettier** to allow ESLint to show formatting errors.
 
