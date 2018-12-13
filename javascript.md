@@ -17,7 +17,7 @@ Step 1: Install **ESlint** + **Prettier**.
 npm install -D eslint prettier
 ```
 
-Step 2: `eslint-config-airbnb` package has many unwanted dependencies for **Vue**, you can also install `eslint-config-airbnb-base` instead:
+Step 2: `eslint-config-airbnb` package has many unwanted dependencies for **Vue**, so install `eslint-config-airbnb-base` instead:
 
 ```bash
 npx install-peerdeps --dev eslint-config-airbnb-base
