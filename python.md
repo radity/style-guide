@@ -6,8 +6,6 @@
 - We always use **double-quote** characters for the [string definition](https://www.python.org/dev/peps/pep-0008/#string-quotes).
 - Use kebab-style in urls.
 - Use kebab-style in asset file names. (for html, css, javascript and image files.)
-- Use double slash " only for translatable strings.
-- Use single slash ' as default.
 
 ## Python module sorter: isort
 In PyCharm you can sort imports alphabetically and separate them into sections (CTRL + SHIFT + O in Windows, with a default keymap). If your editor doesn't have the same feature, you can use [isort](https://pypi.org/project/isort/). It's a command line utility, you can install it with **pip**. Please use our isort configuration:
