@@ -4,8 +4,8 @@
 ## But..
 - We allow up to 119 characters in a line, even if we don't use Django in the project.
 - We always use **double-quote** characters for the [string definition](https://www.python.org/dev/peps/pep-0008/#string-quotes).
-- Use kebab-style in urls.
-- Use kebab-style in asset file names. (for html, css, javascript and image files.)
+- Use *slug-style* in URLs, and always append a slash to the URLs. For example: https://localhost/this-is-an/example-url/
+- Use *underscore* in the file naming including HTML, CSS, JavaScript and image files. For example: **this_is_an_example_file.png**.
 
 ## Python module sorter: isort
 In PyCharm you can sort imports alphabetically and separate them into sections (CTRL + SHIFT + O in Windows, with a default keymap). If your editor doesn't have the same feature, you can use [isort](https://pypi.org/project/isort/). It's a command line utility, you can install it with **pip**. Please use our isort configuration:
