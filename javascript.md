@@ -1,4 +1,4 @@
-# JavaScript
+# JavaScript Style Guide
 
 ## Linting
 
