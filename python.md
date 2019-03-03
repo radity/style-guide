@@ -16,13 +16,13 @@ In PyCharm you can sort imports alphabetically and separate them into sections (
 
 ## Pylint or Flake8
 
-It doesn't matter. Both of them are supporting **isort**.
+Pylint is better than Flake8 but you feel free to choose one. Both of them are supporting **isort**.
 
 ## Configurations
 
 ### setup.cfg
 
-```cfg
+```
 [flake8]
 max-line-length = 119
 ignore = E0401, E1101, C0103, C0111, C0330, W0613
