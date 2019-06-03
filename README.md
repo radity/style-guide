@@ -18,6 +18,10 @@ trim_trailing_whitespace = true
 [Makefile]
 indent_style = tab
 
+[*.c]
+indent_style = tab
+indent_size = 8
+
 [*.cs]
 indent_size = 4
 
