@@ -14,23 +14,33 @@
 
 In PyCharm you can sort imports alphabetically and separate them into sections (CTRL + ALT + O in Windows, with a default keymap). If your editor doesn't have the same feature, you can use [isort](https://pypi.org/project/isort/). It's a command line utility, you can install it with **pip**. Please use our isort configuration:
 
-## Pylint or Flake8
+## Black
 
-Pylint is better than Flake8 but you feel free to choose one. Both of them are supporting **isort**.
+**Black** is the uncompromising, new generation code formatter for Python. It reads the common settings files so, it doesn't matter if you use Pylint or Flake8. All of them are supporting **isort**.
 
 ## Configurations
 
 ### setup.cfg
-
 ```
 [flake8]
 max-line-length = 119
 ignore = E0401, E1101, C0103, C0111, C0330, W0613
 
 [isort]
-line_length = 119
+force_grid_wrap = 0
+include_trailing_comma = True
 indent = "    "
-multi_line_output = 2
+known_localfolder = coachfrog
+line_length = 119
+multi_line_output = 3
+sections = FUTURE,STDLIB,DJANGO,FIRSTPARTY,THIRDPARTY,LOCALFOLDER
+use_parentheses = True
+
+[pycodestyle]
+count = False
+ignore = E0401, E1101, C0103, C0111, C0330, W0613
+max-line-length = 119
+statistics = True
 ```
 
 ### .pylintrc
