@@ -10,7 +10,7 @@ root = true
 [*]
 charset = utf-8
 end_of_line = lf
-indent_size = 2
+indent_size = 4
 indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
@@ -22,21 +22,9 @@ indent_style = tab
 indent_style = tab
 indent_size = 8
 
-[*.cs]
-indent_size = 4
-
 [*.go]
 indent_style = tab
 indent_size = 8
-
-[*.py]
-indent_size = 4
-
-[*.sh]
-indent_size = 4
-
-[*.conf]
-indent_size = 4
 ```
 
 ## Git config
