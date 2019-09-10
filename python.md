@@ -16,9 +16,29 @@ In PyCharm you can sort imports alphabetically and separate them into sections (
 
 ## Black
 
-**Black** is the uncompromising, new generation code formatter for Python. It reads the common settings files so, it doesn't matter if you use Pylint or Flake8. All of them are supporting **isort**.
+**Black** is the uncompromising, new generation code formatter for Python. If your editor doesn't support **black**, you can use it as a command-line app. Also, you can use **isort** for organizing the imports.
 
 ## Configurations
+
+### pyproject.toml
+```
+[tool.black]
+line-length = 119
+target-version = ['py37', 'py38']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | build
+  | dist
+)/
+'''
+```
 
 ### setup.cfg
 ```
