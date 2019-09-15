@@ -44,7 +44,7 @@ exclude = '''
 ```
 [flake8]
 max-line-length = 119
-ignore = E0401, E1101, C0103, C0111, C0330, W0613
+ignore = E0401, E1101, C0103, C0111, C0330, W0613, W503
 
 [isort]
 force_grid_wrap = 0
@@ -58,7 +58,7 @@ use_parentheses = True
 
 [pycodestyle]
 count = False
-ignore = E0401, E1101, C0103, C0111, C0330, W0613
+ignore = E0401, E1101, C0103, C0111, C0330, W0613, W503
 max-line-length = 119
 statistics = True
 ```
